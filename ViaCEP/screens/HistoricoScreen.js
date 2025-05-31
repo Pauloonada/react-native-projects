@@ -8,7 +8,7 @@ export default function HistoricoScreen() {
     return (
         <ScrollView style={styles.container}>
             { history && history.length === 0 ? (
-                <Text>Nenhum CEP consultado ainda.</Text>
+                <Text style={styles.textLight}>Nenhum CEP consultado ainda.</Text>
             ) : (
                 history.map((item, index) => (
                     <View key={index} style={styles.item}>
